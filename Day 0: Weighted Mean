@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */        int n,i;
+    double sum=0,v[55],w[55],sumw=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%lf",&v[i]);
+    }
+    for(i=0;i<n;i++){
+        scanf("%lf",&w[i]);
+        sum+=v[i]*w[i];
+        sumw+=w[i];
+    }
+    printf("%.1lf",sum/sumw);
+    return 0;
+}
